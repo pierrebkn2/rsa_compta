@@ -33,7 +33,7 @@
         "slim/twig-view": "^3.3",
         "symfony/cache": "^6.4",
         "twig/intl-extra": "^3.13",
-        "uma/dic": "^2.0"
+        "uma/dic": "^4.2"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.94",

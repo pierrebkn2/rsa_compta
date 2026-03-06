@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6e3e479892870648bf41bf9e25f405bc",
+    "content-hash": "c7952043f79d1e2460f5f675bd62bcd9",
     "packages": [
         {
             "name": "doctrine/collections",
@@ -1556,22 +1556,27 @@
         },
         {
             "name": "psr/container",
-            "version": "1.1.2",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/container.git",
-                "reference": "513e0666f7216c7459170d56df27dfcefe1689ea"
+                "reference": "c71ecc56dfe541dbd90c5360474fbc405f8d5963"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/container/zipball/513e0666f7216c7459170d56df27dfcefe1689ea",
-                "reference": "513e0666f7216c7459170d56df27dfcefe1689ea",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/c71ecc56dfe541dbd90c5360474fbc405f8d5963",
+                "reference": "c71ecc56dfe541dbd90c5360474fbc405f8d5963",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.4.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Psr\\Container\\": "src/"
@@ -1598,9 +1603,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-fig/container/issues",
-                "source": "https://github.com/php-fig/container/tree/1.1.2"
+                "source": "https://github.com/php-fig/container/tree/2.0.2"
             },
-            "time": "2021-11-05T16:50:12+00:00"
+            "time": "2021-11-05T16:47:00+00:00"
         },
         {
             "name": "psr/http-client",
@@ -3689,28 +3694,30 @@
         },
         {
             "name": "uma/dic",
-            "version": "v2.0.1",
+            "version": "v4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/1ma/DIC.git",
-                "reference": "86215af69b17b1bdea95ef82f4f9b514e3637931"
+                "reference": "d4d2f0fabe8a416eb1eb7b2a4e3d52b3f2f77d61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/1ma/DIC/zipball/86215af69b17b1bdea95ef82f4f9b514e3637931",
-                "reference": "86215af69b17b1bdea95ef82f4f9b514e3637931",
+                "url": "https://api.github.com/repos/1ma/DIC/zipball/d4d2f0fabe8a416eb1eb7b2a4e3d52b3f2f77d61",
+                "reference": "d4d2f0fabe8a416eb1eb7b2a4e3d52b3f2f77d61",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.3.0 || ^7.4.0 || ^8.0.0",
-                "psr/container": "^1.0"
+                "php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0",
+                "psr/container": "^2.0"
             },
             "provide": {
                 "psr/container-implementation": "^1.0"
             },
             "require-dev": {
-                "phpmetrics/phpmetrics": "^2.7",
-                "phpunit/phpunit": "^9.5"
+                "friendsofphp/php-cs-fixer": "^3.67",
+                "phpmetrics/phpmetrics": "^3.0-rc",
+                "phpunit/phpunit": "^11.5",
+                "uma/ocular": "^2.0"
             },
             "type": "library",
             "autoload": {
@@ -3725,9 +3732,9 @@
             "description": "A minimalistic PSR-11 container",
             "support": {
                 "issues": "https://github.com/1ma/DIC/issues",
-                "source": "https://github.com/1ma/DIC/tree/v2.0.1"
+                "source": "https://github.com/1ma/DIC/tree/v4.2.0"
             },
-            "time": "2021-01-21T08:42:21+00:00"
+            "time": "2025-12-13T09:24:53+00:00"
         }
     ],
     "packages-dev": [
