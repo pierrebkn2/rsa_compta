@@ -32,7 +32,12 @@ final class SGImportService
                 continue;
             }
             $data = str_getcsv($fileLine, ";");
-            $this->createLine($data, $handle, $fileLine);
+            try {
+                $this->createLine($data, $handle, $fileLine);
+            } catch (\Exception $e) {
+                error_log("Error processing line $lineNumber: " . $e->getMessage());
+                $fileLine = fgets($handle);
+            }
         }
 
         $this->em->flush();

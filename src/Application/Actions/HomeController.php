@@ -41,6 +41,7 @@ class HomeController
         $year = $data['year'] ?? null;
         if ($year) {
             // Save the current year in /var/current_year.txt
+            // @phpstan-ignore constant.notFound
             file_put_contents(APP_ROOT . '/var/current_year.txt', $year);
         }
         return $response->withHeader('Location', '/')->withStatus(302);
